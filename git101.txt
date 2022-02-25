@@ -1,0 +1,43 @@
+### Very basic git workflow
+To clone a repo e.g this one:
+```
+git clone git@github.com:fanch2n/SML505_SP22.git
+```
+Check the status of currect repo:
+```
+git status
+```
+Now if you create a new file or do some modifications, and do #git status again, it shows you what has been changed.
+After modifications, to stage(add) the changes for next commit, do
+```
+git add filename1 file2 ...
+``` 
+Ready to commit
+```
+git commit -m "some messages about what you did"
+```
+Inorder for the changes to show up in the repo
+```
+git push
+```
+Check if success
+```
+git status
+```
+
+
+To sync with the master repo
+```
+git pull
+```
+Or equivalently
+```
+git fetch 
+git merge origin/mater
+```
+
+We probably want to work with the same file (given it ususally involves one jupyter notebook) on different branches and then merge them to the master. 
+"If you changed the same part of the same file differently in the two branches you’re merging, Git won’t be able to merge them cleanly.", but it leaves markers on where the inconsistence are
+and they can be manually corrected. 
+
+Useful reference: https://git-scm.com/book/en/v2
