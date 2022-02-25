@@ -1,3 +1,7 @@
 # SML505_SP22
 
-Homework repo 
+Repo for SML505
+
+* homework solutions 
+* notes and scribbles
+  
